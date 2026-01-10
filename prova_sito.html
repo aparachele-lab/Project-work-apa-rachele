@@ -4,16 +4,21 @@
 <link rel="stylesheet" href="personalizza.css">
 <meta charset="UTF-8">
 <title>PW-17 apa rachele</title>
+<!-- Framework CSS w3.css per layout responsive-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Libreria icone FontAwesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
+/* Font generale della pagina */
     body { font-family: Arial; }
+/* stile base dell'header HERO */
     .hero {
         height: 300px;
         background: #f5f5f5;
         display: flex;
         justify-content: center;
         align-items: center;
+/* Gestione dell'immagine interna */
     }
     .hero img {
         max-height: 260px;
@@ -23,7 +28,7 @@
 </style>
 </head>
 <body>
-<!-- Navbar -->
+<!-- Barra superiore con contatti -->
 <div class="w3-bar w3-green">
   <div style="display: flex; justify-content: center; gap: 20px;">
     <a class="w3-button">📞 +39 051 6228311</a>
@@ -31,17 +36,16 @@
 </div>
 </div>
 
-<!-- HERO FULLSCREEN -->
+<!-- HERO FULLSCREEN con immagine di sfondo -->
 <div class="hero" style="
     width:100%;
-    height:400px;           /* CAMBIA qui l’altezza come vuoi */
+    height:400px;           /*altezza */
     background-image: url('sfondopagina.jpg');
     background-size: cover; /* L'immagine riempie tutta l'area */
     background-position: center;
     background-repeat: no-repeat;
 ">
 </div>
-<!-- Bottone Learn -->
 <!-- SEZIONE DESCRIZIONE AZIENDA -->
 <section class="about-container">
     <div class="about-left">
@@ -57,19 +61,52 @@
         </p>
     </div>
 
+<!-- Colonnad destra Immagine rappresentativa centrale-->
     <div class="about-right">
         <img src="trasparente.png" alt="Conserve Italia">
     </div>
 </section>
 
-<!-- SEZIONE INIZIATIVE IN CONTENITORE -->
-<!-- SEZIONE INIZIATIVE FULL REAL WIDTH -->
+<!-- SEZIONE IMPEGNO SOCIALE E GOVERNANCE -->
+<section class="social-governance">
+    <h2>Impegno sociale e governance</h2>
+
+    <div class="social-cards">
+
+        <!-- Card Impegno Sociale -->
+        <div class="social-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Responsabilità sociale</h3>
+            <p>
+                Conserve Italia promuove la tutela dei diritti umani, la salute e la sicurezza nei luoghi di lavoro,
+                aderendo alla Rete del Lavoro Agricolo di Qualità e contrastando pratiche di sfruttamento lungo la filiera.
+                L’azienda investe inoltre nella formazione continua e nella valorizzazione delle competenze del personale.
+            </p>
+        </div>
+
+        <!-- Card Governance -->
+        <div class="social-card">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Trasparenza e governance</h3>
+            <p>
+                L’azienda adotta un modello di governance orientato alla sostenibilità, integrando i principi etici
+                nelle decisioni strategiche. I report di sostenibilità, redatti secondo gli standard GRI,
+                rappresentano uno strumento di dialogo e trasparenza verso soci, lavoratori e consumatori.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SEZIONE DESCRIZIONE PRINCIPALI INIZIATIVE SOSTENIBILITA IN CONTENITORE FULL REAL WIDTH-->
 <div style="background:#f2f2f2; width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; padding:80px 20px;">
 
     <h2 class="w3-center" style="margin-bottom:40px;">Le nostre principali iniziative sulla Sostenibiltà</h2>
 
     <div class="w3-row-padding w3-center" style="max-width:1200px; margin:auto;">
 
+<!-- Card: Agricoltura ecologica-->
         <div class="w3-third">
             <div class="w3-card w3-padding w3-green">
                 <h3><i class="fa-solid fa-seedling"></i><br>Agricoltura ecologica e filiera responsabile</h3>
@@ -77,6 +114,7 @@
             </div>
         </div>
 
+<!-- Card : Produzione sostenibile-->
         <div class="w3-third">
             <div class="w3-card w3-padding w3-green">
                 <h3><i class="fa-solid fa-droplet"></i><br> Produzione sostenibile e energie rinnovabili</h3>
@@ -84,6 +122,7 @@
             </div>
         </div>
 
+<!-- Card : imballaggi e riciclo-->
         <div class="w3-third">
             <div class="w3-card w3-padding w3-green">
                 <h3><i class="fa-solid fa-hand-holding-heart"></i><br>Imballaggi, riciclo e riduzione degli sprechi</h3>
@@ -96,23 +135,28 @@
 </div>
 </div>
 
-<!-- Sezione Report -->
-<!-- SEZIONE REPORT IN CONTENITORE -->
+<!-- Sezione Report in contenitore con pulsanti -->
 <div class="w3-container w3-padding-64 w3-center" style="background:#ffffff; border-radius:12px; margin:60px auto; max-width:900px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
 
     <h2>Scarica gli ultimi due Report di Sostenibilità</h2>
     <p style="margin-bottom:30px;">
         Puoi consultare il documento ufficiale dell’azienda cliccando sul pulsante qui sotto.
     </p>
+    <!-- Pulsante report 2024 con downlaod riferimento Github-->
+    <a href="https://raw.githubusercontent.com/aparachele-lab/Sviluppo-di-una-pagina-web-per-il-download-dei-report-di-sostenibilit-per-azienda-settore-primario/e0addbe8dbf5185ee82674fabd90ffb55eaec6d3/Report_Sostenibilita%CC%80_2024_06.pdf"
+   download="Report_Sostenibilita_2024.pdf"
+   class="w3-button w3-green w3-xlarge w3-round-large">
+    <i class="fa-solid fa-file-arrow-down"></i> Scarica il Report 2024
+    </a>
 
-    <button class="w3-button w3-green w3-xlarge w3-round-large">
-        <i class="fa-solid fa-file-arrow-down"></i> Scarica il Report 2024
-    </button>
-    <button class="w3-button w3-green w3-xlarge w3-round-large">
-        <i class="fa-solid fa-file-arrow-down"></i> Scarica il Report 2021
-    </button>
+  <!--Pulsante report 2021 con download riferimento Github -->
+  <a href="https://raw.githubusercontent.com/aparachele-lab/Sviluppo-di-una-pagina-web-per-il-download-dei-report-di-sostenibilit-per-azienda-settore-primario/e0addbe8dbf5185ee82674fabd90ffb55eaec6d3/Report_Sostenibilit%C3%A0_2021_10.pdf"
+  download="Report_Sostenibilita_2021.pdf"
+  class="w3-button w3-green w3-xlarge w3-round-large">
+  <i class="fa-solid fa-file-arrow-down"></i> Scarica il Report 2021
+    </a>
 </div>
-<!-- Footer -->
+<!-- Footer conclusivo -->
 <footer class="w3-center w3-padding-32">
     © 2025-2026 - Pagina per PW L-31 APA RACHELE 0312400138
 </footer>
